@@ -676,6 +676,8 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
+
+    
     .container-hero{
         display: flex;
         flex-direction: column;
@@ -688,16 +690,20 @@ p {
         flex-direction: column;
         padding: 20px;
         width: max-content;
+        
     }
     
     .container-navbar {
         display: flex;
         flex-direction:column ;
+        scroll-padding: inherit;
     }
 
     .navbar-content{
         display: flex;
         flex-direction:column ;
+        width: max-content;
+        
     }
     
 .search-form{
@@ -743,23 +749,26 @@ p {
     .menu { 
         position: absolute;
         top: 14rem;
-        
-        background-color: #787879;
+        display: block;
+        background-color: #0000b1;
         width: 60%;
         
         
     }
  /* continuar con el responsive */
-    .menu li  a {
+    .menu li {
         display: block;
-        margin-right: 600px;
-        margin-top: 10px;
+        margin-right: 40px;
+        margin-top: 80px;
         margin-bottom: 10px;
-        color: #641111;
+        color: #ccbbbb;
         
     } 
     #menu-icon{
         display: block;
     }
+
+    
+
 
 }

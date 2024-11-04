@@ -28,7 +28,7 @@
 
                 <div class="container-logo">
                     <!-- <i class="fa-duotone fa-solid fa-gift"></i> -->
-                    <h2 class="logo"> <a class="titulo" href="/">Fragranza</a> </h2>
+                    <h2 class="logo"> <a class="titulo" href="index.html">Fragranza</a> </h2>
                 </div>
 
                 <div class="container-user">
@@ -56,21 +56,18 @@
                         </button>
                     </form>
 
-                    <ul class="menu">
-                        <li id="li" ><a href="#">Inicio </></li>
-                        <li id="li"><a href="#">Log In</a></li>
-                        <li id="li"><a href="#">Carrito</a></li>
-                        <li id="li"><a href="#">Favoritos</a></li>
-                        <li id="li"><a href="#">Log Out</a></li>
-                        <!-- <li><a href=""><i id="menu-icon" class="fa-solid fa-bars"></i></a></li> -->
-                        <!-- <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-                    <span class="sr-only">Loading...</span> -->
+                    <ul class="menu" id="menu-items">
+                        <li > <a href="index.html">Inicio </a> </li>
+                        <li > <a href="#">Log In </a> </li>
+                        <li > <a href="#">Carrito </a> </li>
+                        <li > <a href="#">Favoritos </a> </li>
+                        <li > <a href="contacto.html">Contacto </a> </li>
+                        <li > <a href="#">Log Out </a> </li>
                     </ul>
                 </div>
-
-
+                <i id="menu-icon" class="fa-solid fa-bars" onclick="menuteggle()"></i>
             </nav>
-            <i id="menu-icon" class="fa-solid fa-bars"></i>
+            
 
         </div>
     </header>
@@ -87,8 +84,8 @@
         </div>
     </section>
 
-    <img class="gif" src="BT_BNE_DESK.webp" alt="">
-    <img class="gif2" src="bt_bomba_1.webp" alt="">
+    <img class="gif" src="img/BT_BNE_DESK.webp" alt="">
+    <img class="gif2" src="img/bt_bomba_1.webp" alt="">
 
     <section class="container container-features">
         <div class="card-feature">
@@ -111,6 +108,10 @@
     <div class="modal-overlay" id="modal-overlay"></div>
     <div class="modal-container" id="modal-container"></div>
 
+    <!-- En tu HTML, añade un enlace a Favoritos
+    <li id="li"><a href="#" onclick="displayFavorites()">Favoritos</a></li> -->
+
+
     <!-- offer -->
 
 
@@ -120,7 +121,7 @@
                 <div class="small-container">
                     <div class="row">
                         <div class="col-1">
-                            <img src="16 oferta.png" alt="">
+                            <img src="img/16 oferta.png" alt="">
                         </div>
                         <div class="col-2">
                             <p class="oferta-exclusiva"> Oferta exclusiva </p>
