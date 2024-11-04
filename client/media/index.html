@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fragranza</title>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Moderustic:wght@300..800&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<!-- Font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <div class="content-customer-support">
+
+                        <span class="text"> Hasta 12 cuotas sin intereses <i class="fa fa-credit-card " ></i> </span> 
+                        
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="container-logo">
+                    <!-- <i class="fa-duotone fa-solid fa-gift"></i> -->
+                    <h2 class="logo"> <a href="/">Fragranza</a> </h2>
+                </div>
+        
+                <div class="container-user">
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    <!-- <i class="fa-duotone fa-solid fa-basket-shopping"></i> -->
+        
+                    <div class="content-shopping-cart">
+                        <span class="text"> Marcas seleccionadas </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="#">Inicio </a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Log Out</a></li>
+                    <!-- <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span> -->
+                </ul>
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <h1>Fragranza</h1>
+
+    <!-- <img class="portada" src="3c936ffc6ec37d2bb9ddef751a279d5862de65847e887be805f6c353ae58929974448.png" alt=""> -->
+
+    <section class="banner">
+        <div class="content-banner">
+            <p>Nueva Colección</p>
+            <h3>Primavera - Verano</h3>
+            <a href="#"> Comprar ahora</a>
+        </div>
+    </section>
+
+    <img class="gif" src="BT_BNE_DESK.webp" alt="">
+    <img  class="gif2" src="bt_bomba_1.webp" alt="">
+
+    <section class="container container-features">
+        <div class="card-feature">
+
+        </div>
+    </section>
+
+    <p class="lanzamiento"> Suscríbete y se el primero en enterarte de lanzamientos, novedades y promociones</p>
+
+    <!-- shop content-->
+    <div class="card-products-container">
+        <div class="card-products" id="shopContent"></div>
+    </div>
+    <!-- cart button-->
+    <div class="cart-btn" id="cart-btn">🛒</div>
+    <!--cart counter-->
+    <span class="cart-counter" id="cart-counter">0</span>
+
+    <!--modal-->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container" id="modal-container"></div>
+
+    <hr>
+<footer class="footer container">
+    <div class="footer-links">
+        <div class="link">
+            <h3>Fragranza</h3>
+            <div class="socials">
+                <!-- <img src="imagenes/whatsapp-logo-36.png" alt="Whatsapp"> -->
+                <i class="fa-brands fa-whatsapp"></i>
+                <!-- <img src="imagenes/facebook-circle-logo-36.png" alt="Facebook"> -->
+                <i class="fa-brands fa-facebook"></i>
+                <!-- <img src="imagenes/instagram-logo-36.png" alt="Instagram">-->
+                <i class="fa-brands fa-instagram"></i> 
+
+            </div>
+        </div>
+
+        <div class="link">
+            <h3> Contáctanos </h3>
+            <ul>
+                <li><a href="#">Tél.: +54 9 2604 68-9332</a></li>
+                <li><a href="#">Tél.: +54 9 2604 09-5114</a></li>
+            </ul>
+            <br>
+            <br>
+            <div class="link" id="copyright">
+                <p> &#169; 2024. Fragranza </p>
+    
+            </div>
+        </div>
+
+        <div class="link" id="medios-de-pago">
+            <h3> Todos los medios de pago </h3>
+            <ul  style="list-style-type: none;">
+                <li ><p >Efectivo</p> <i class="fa-solid fa-money-bill-1-wave"></i></li>
+                <li><p>Transferencia    </p> <i class="fa-solid fa-money-bill-transfer"></i> </li>
+                <li><p>Débito</p> <i class="fa-brands fa-cc-visa"></i> </li>
+                <li><p>Crédito</p> <i class="fa-brands fa-cc-mastercard"></i> </li>
+            </ul>
+            
+        </div>
+
+
+    </div>
+</footer>
+
+    <script src="/client/js/products.js"></script>
+    <script src="/client/js/index.js"></script>
+    <script src="/client/js/cart.js"></script>
+    
+</body>
+</html>
