@@ -68,6 +68,8 @@ body{
     text-shadow: 20px 19px 35px #e2dfd8, 0 0 1em rgb(110, 110, 207), 0 0 0.2em rgb(227, 227, 233);
 }
 
+
+
 .container-navbar{
     background-color: rgb(10, 93, 165);
 }
@@ -196,6 +198,7 @@ body{
     font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: 500;
+    margin-left: -80rem;
 }
 
 .content-banner h3{
@@ -214,6 +217,14 @@ body{
     padding: 1rem 1rem;
     text-transform: uppercase;
     border-radius: 3rem;
+    transition: trasform 0.5s;
+}
+
+.content-banner a:hover{
+    background-color: aliceblue;
+    color: #000000;
+    transform: translateY(-3px);
+    font-weight: 500;
 }
 
 .lanzamiento{
@@ -255,7 +266,9 @@ h1{
     text-shadow: 20px 19px 35px #daa520, 0 0 1em rgb(8, 8, 41), 0 0 0.2em rgb(227, 227, 233);
     margin-top: 50px;
     margin-bottom: 40px;
+    transform: translateY(-5px);
 }
+
 
 .card-products-container img{
     border: #f5f4f2 solid ;
@@ -269,6 +282,7 @@ h1{
     background-color: #ffffffde;
     border: #070e38c9 solid ;
     box-shadow: 10px 10px 23px 3px rgba(245, 244, 244, 0.233);
+    transform: translate(-5px);
 }
 
 .card-products-container {
@@ -287,6 +301,7 @@ h1{
     padding: 5px;
     /* font-weight: 500;
     font-style: italic; */
+    transition: transform 0.5s;
 }
 
 p{
@@ -318,6 +333,10 @@ p{
 }
 .card-products button:hover {
     opacity: 0.7;
+    transform: translateY(-3px);
+    font-weight: 600;
+    background-color: #0a44e2ee;
+    color: #ffffff;
 
 }
 /*cart button*/
@@ -331,6 +350,7 @@ p{
     height: 24px;
     width: 24px;
     transition: transform 0.2s ease-in-out;
+    transition: trasform 0.5s;
 }
 
 .cart-btn:hover {
