@@ -109,3 +109,34 @@ const productos = [
     },
     
 ];
+
+const newProducts = [
+    {
+        id: 101,
+        productName: "AB - The icon elixir",
+        price: 55.99,
+        img: "/client/media/img/17.png",
+        quanty: 1
+    },
+    {
+        id: 102,
+        productName: "AB - Blue seduction",
+        price: 65.99,
+        img: "/client/media/img/18.png",
+        quanty: 1
+    },
+    {
+        id: 103,
+        productName: "AB - Her secret tempt",
+        price: 75.99,
+        img: "/client/media/img/19.png",
+        quanty: 1
+    },
+    {
+        id: 104,
+        productName: "AB - Her secret kiss",
+        price: 85.99,
+        img: "/client/media/img/20.png",
+        quanty: 1
+    }
+];

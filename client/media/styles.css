@@ -42,7 +42,7 @@ body{
 }
 
 .customer-support i{
-    font-size: 3.3rem;
+    font-size: 1rem;
 }
 
 .content-customer-support{
@@ -51,7 +51,8 @@ body{
 }
 
 .container-logo i{
-    font-size: 3rem;
+    font-size: 1rem;
+
 }
 
 .container-logo{
@@ -772,3 +773,160 @@ p {
 
 
 }
+
+
+#nuevos-productos{
+
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#newProducts{
+    border: #f5f4f2 solid ;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: auto;
+
+    margin-top: 4rem;
+    color: #000000;
+}
+
+#newProductsContainer{
+    column-gap: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    padding: 5px;
+    transition: transform 0.5s;
+    width: 20%;
+    color: #000000;
+    margin: 0% 25%;
+}
+
+#newProductsContainer .product  {
+    display: flex;
+    flex-direction: column;
+}
+
+#newProductsContainer img{
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+#newProductsContainer p{
+    color: #000000;
+    font-weight: 400;
+
+}
+
+#newProductsContainer button{
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: rgb(253, 250, 250);
+    background-color: #070f7e;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 15px;
+    font-family: "Moderustic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 5%;
+}
+
+
+#newProductsContainer button:hover{
+    opacity: 0.7;
+    transform: translateY(-3px);
+    font-weight: 600;
+    background-color: #161c7cc0;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+#newProductsSlider{
+    border: #f5f4f2 solid ;
+    border-radius: 5px;
+    background-color: #dbcdcd;
+    width: 100%;
+    margin: auto;
+
+    margin-top: 4rem;
+    color: #000000;
+}
+
+.slider-container .product{
+    column-gap: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    padding: 5px;
+    transition: transform 0.5s;
+    width: 20%;
+    color: #000000;
+    margin: 0% 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #newProductsSlider {
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.product {
+    min-width: 25%; /* Esto permite ver un producto completo en cada slide */
+    /* box-sizing: border-box;
+    padding: 10px; */
+/* } */
+
+/* button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}  */
