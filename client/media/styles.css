@@ -861,12 +861,6 @@ p {
 }
 
 
-
-
-
-
-
-
 #newProductsSlider{
     border: #f5f4f2 solid ;
     border-radius: 5px;
@@ -1007,11 +1001,6 @@ p {
 
     }
 
-    /* #newProductsContainer .product{
-        grid-template-columns: repeat(auto-fit, minmax(36rem,1fr )) ;
-        padding: 1rem;
-    } */
-
     #newProductsContainer .product p {
         width: 50%;
         font-size: small;
@@ -1021,6 +1010,10 @@ p {
         width: 50%;
     }
     
+    .cart-btn{
+        font-size: 2rem;
+    }
+
 
 } /*@media only screen and (max-width: 768px)*/
 
