@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="carrusel.css">
 <title>Fragranza</title>
 <script src="https://sdk.mercadopago.com/js/v2"></script>
 <!-- Google fonts -->
@@ -13,6 +14,8 @@
     rel="stylesheet">
 <!-- Font awesome icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- link swiper  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -57,17 +60,17 @@
                     </form>
 
                     <ul class="menu" id="menu-items">
-                        <li > <a href="index.html">Inicio </a> </li>
-                        <li > <a href="#">Log In </a> </li>
-                        <li > <a href="#">Carrito </a> </li>
-                        <li > <a href="#">Favoritos </a> </li>
-                        <li > <a href="contacto.html">Contacto </a> </li>
-                        <li > <a href="#">Log Out </a> </li>
+                        <li> <a href="index.html">Inicio </a> </li>
+                        <li> <a href="#">Log In </a> </li>
+                        <li> <a href="#">Carrito </a> </li>
+                        <li> <a href="#">Favoritos </a> </li>
+                        <li> <a href="contacto.html">Contacto </a> </li>
+                        <li> <a href="#">Log Out </a> </li>
                     </ul>
                 </div>
                 <i id="menu-icon" class="fa-solid fa-bars" onclick="menuteggle()"></i>
             </nav>
-            
+
 
         </div>
     </header>
@@ -101,6 +104,8 @@
         <div id="newProductsContainer"></div>
     </section>
 
+    <h2 class="catalogo-perfumes"> Catálogo de Perfumes </h2>
+
     <!-- shop content-->
     <div class="card-products-container">
         <div class="card-products" id="shopContent"></div>
@@ -118,9 +123,7 @@
     <li id="li"><a href="#" onclick="displayFavorites()">Favoritos</a></li> -->
 
 
-    <!-- offer -->
-
-
+    <!-- offertas -->
     <section>
         <section class="oferta">
             <div class="offer">
@@ -146,17 +149,65 @@
     </section>
 
 
-    <section id="newProductsSlider">
-        <h2>Nuevos Productos</h2>
-        <div class="slider-container">
-            <button id="prevButton">⬅️</button>
-            <div class="slider-track" id="sliderTrack">
-                Aquí se cargarán los productos dinámicamente
+
+    <!-- Carrusel de Novedades -->
+    <h2 class="catalogo-perfumes"> Novedades</h2> 
+    <section class="carrusel">
+        
+        <div class="containerCarrusel swiper">
+            <!-- <h1 class="titulo-carrusel">Novedades</h1> -->
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img class="card-image" src="img/carrusel/carrusel-1.png" alt="Card Image">
+                            <p class="badge Versace"> Versace </p>
+                            <h2 class="card-title"> VERSACE WOMAN E.D. PARFUM  </h2>
+                            <button class="card-button fa fa-arrow-right" aria-hidden="true"></button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img class="card-image" src="img/carrusel/carrusel-2.png" alt="Card Image">
+                            <p class="badge Dior"> Dior </p>
+                            <h2 class="card-title"> JEAN PAUL GAULTIER DIVINE  </h2>
+                            <button class="card-button fa fa-arrow-right" aria-hidden="true"></button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a class="card-link" href="">
+                            <img class="card-image" src="img/carrusel/carrusel-3.png" alt="Card Image">
+                            <p class="badge Jean"> Jean Paul Gaultier </p>
+                            <h2 class="card-title"> DIOR MAGIC HOMME cologne EDT </h2>
+                            <button class="card-button fa fa-arrow-right" aria-hidden="true"></button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a class="card-link" href="">
+                            <img class="card-image" src="img/carrusel/carrusel-4.png" alt="Card Image">
+                            <p class="badge Carolina"> Carolina Herrera </p>
+                            <h2 class="card-title"> GOODGIRL CAROLINA HERRERA </h2>
+                            <button class="card-button fa fa-arrow-right" aria-hidden="true"></button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a class="card-link" href="">
+                            <img class="card-image" src="img/carrusel/carrusel-5.png" alt="Card Image">
+                            <p class="badge Antonio"> Antonio Banderas </p>
+                            <h2 class="card-title"> SEDUCTION ANTONIO BANDERAS </h2>
+                            <button class="card-button fa fa-arrow-right" aria-hidden="true"></button>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
             </div>
-            <button id="nextButton">➡️</button>
         </div>
-    </section> 
-    
+    </section>
+
+
 
     <hr>
     <footer class="footer container">
@@ -204,16 +255,18 @@
                         <p>Crédito</p> <i class="fa-brands fa-cc-mastercard"></i>
                     </li>
                 </ul>
-
             </div>
-
-
         </div>
     </footer>
 
     <script src="/client/js/products.js"></script>
     <script src="/client/js/index.js"></script>
     <script src="/client/js/cart.js"></script>
+    <!-- Link SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Link custom script  -->
+    <script src="carrusel.js"></script>
 
 </body>
 

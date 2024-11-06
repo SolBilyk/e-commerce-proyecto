@@ -288,6 +288,11 @@ h1{
     transform: translateY(-5px);
 }
 
+.catalogo-perfumes{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 40px;
+}
 
 .card-products-container img{
     border: #f5f4f2 solid ;
