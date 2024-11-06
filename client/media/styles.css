@@ -822,14 +822,38 @@ p {
 
     }
 
-    .navbar .fa-bars{
+    .navbar .menu-icon{
         display: block;
         color: #fff;
         font-size: 3rem;
     }
 
+    .menu-icon{
+        cursor: pointer;
+    }
+
+    .show {
+        display: flex;
+        cursor: pointer;
+        
+    }
+
+    .menu.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
     .menu{
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
     }
 
     .content-banner{
